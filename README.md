@@ -1,4 +1,6 @@
-# bitcoin-rpc - [npm](https://www.npmjs.com/package/@jskitty/bitcoin-rpc)
+[![GitHub license](https://img.shields.io/github/license/Cryptech-Services/bitcoin-rpc)](https://github.com/Cryptech-Services/bitcoin-rpc/blob/main/LICENSE.md) [![npm version](https://badge.fury.io/js/@cryptech.services%2Fbitcoin-rpc.svg)](https://badge.fury.io/js/@cryptech.services%2Fbitcoin-rpc) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/Cryptech-Services/bitcoin-rpc/master) [![Node.js CI](https://github.com/Cryptech-Services/bitcoin-rpc/actions/workflows/node.js.yml/badge.svg)](https://github.com/Cryptech-Services/bitcoin-rpc/actions/workflows/node.js.yml)
+
+# bitcoin-rpc
 
 A simple, efficient, zero-dep Bitcoin RPC interface.
 
