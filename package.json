@@ -1,19 +1,65 @@
 {
-  "name": "@jskitty/bitcoin-rpc",
-  "version": "1.0.2",
+  "name": "@cryptech.services/bitcoin-rpc",
+  "version": "1.1.0",
   "description": "A simple, efficient, zero-dep Bitcoin RPC interface.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "mocha --config mocharc.json",
+    "lint": "eslint .",
+    "check-format": "prettier . --check",
+    "format": "prettier --write \"**/*.+(js|ts|json)\"",
+    "clean": "rimraf lib"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JSKitty/bitcoin-rpc.git"
+    "url": "git+https://github.com/Cryptech-Services/bitcoin-rpc.git"
   },
-  "author": "JSKitty",
+  "author": "Cryptech Services",
+  "contributors": [
+    {
+      "name": "JSKitty",
+      "email": "mail@jskitty.cat"
+    },
+    {
+      "name": "SeqSEE",
+      "email": "seqsee@cryptech.services"
+    }
+  ],
+  "source": "src/index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*",
+    "README.md"
+  ],
+  "directories": {
+    "lib": "./lib",
+    "src": "./src",
+    "test": "./src"
+  },
+  "engines": {
+    "npm": ">=6.0.0",
+    "node": ">=18.0.0"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JSKitty/bitcoin-rpc/issues"
+    "url": "https://github.com/Cryptech-Services/bitcoin-rpc/issues"
   },
-  "homepage": "https://github.com/JSKitty/bitcoin-rpc#readme"
+  "homepage": "https://github.com/Cryptech-Services/bitcoin-rpc#readme",
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^22.5.4",
+    "@types/sinon": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
+    "assert": "^2.0.0",
+    "eslint": "^9.9.0",
+    "mocha": "^10.0.0",
+    "prettier": "^2.6.2",
+    "rimraf": "^6.0.1",
+    "sinon": "^18.0.0",
+    "ts-node": "^10.8.0",
+    "typedoc": "^0.26.5",
+    "typescript": "5.5.4"
+  }
 }
